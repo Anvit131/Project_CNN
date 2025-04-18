@@ -7,11 +7,18 @@ Dataset Structure
 
 dataset_path/
     train/
+
+dataset_path/
     val/
+    
+**Handling Different Image Dimensions**
+using 
+
+`from torchvision import transforms`
 
  Model Overview
 
-We use the pretrained `torchvision.models.resnet50`:
+Ie used the pretrained `torchvision.models.resnet50` Model:
 
 - All layers are frozen initially.
 - Last ResNet block (`layer4`) and final classifier (`fc`) are unfrozen.
@@ -102,12 +109,13 @@ python train.py
 The codebase can be modularized into the following structure for better maintainability:
 
 project/
-├── train.py              # Main training script
+
 ├── model.py              # Model definition and customization
-├── data.py               # Dataset loading and transforms
+├── train.py              # Main training script
+├── get_dataloaders.py               # Dataset loading and transforms
 ├── utils.py              # Helper functions (e.g., plotting)
 ├── config.py             # Configuration variables
-├── requirements.txt      # Python dependencies
+├── train_wandb           # Wandb training
 └── README.md             # Project documentation
 
 Each file can encapsulate one aspect of the pipeline, making it easier to debug, reuse, or extend.
