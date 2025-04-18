@@ -108,8 +108,8 @@ sweep_config = {
 
 | Parameter        | Values |
 |------------------|--------|
-| `epochs`         | `[5, 10, 15]` |
-| `filter_sizes`   | E.g. `[16, 32, 32, 32, 32]`, etc. |
+| `epochs`         | `[5, 10, 15, 20]` |
+| `filter_sizes`   | `[16, 32, 32, 32, 32]`, `[128, 128, 256, 256, 512]`, `[32, 64, 64, 128, 128]`, `[32, 64, 128, 128, 256]` |
 | `dense_neurons`  | `[128, 256, 512]` |
 | `activation`     | `relu`, `silu`, `gelu`, `mish` |
 | `learning_rate`  | `[1e-3, 1e-4]` |
