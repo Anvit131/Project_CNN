@@ -95,7 +95,9 @@ wandb
 
 .
 ├── train.py
+
 ├── plot_images.py
+
 ├── README.md
 
 
@@ -111,11 +113,17 @@ The codebase can be modularized into the following structure for better maintain
 project/
 
 ├── model.py              # Model definition and customization
+
 ├── train.py              # Main training script
+
 ├── get_dataloaders.py               # Dataset loading and transforms
+
 ├── utils.py              # Helper functions (e.g., plotting)
+
 ├── config.py             # Configuration variables
+
 ├── train_wandb           # Wandb training
+
 └── README.md             # Project documentation
 
 Each file can encapsulate one aspect of the pipeline, making it easier to debug, reuse, or extend.
