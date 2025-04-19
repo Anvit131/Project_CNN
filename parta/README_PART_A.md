@@ -151,3 +151,20 @@ wandb login
 ```
 
 ---
+
+
+The codebase can be modularized into the following structure for better maintainability:
+
+project/
+
+├── model.py              # Model definition and customization
+
+├── train.py              # Main training script
+
+├── get_dataloaders.py               # Dataset loading and transforms
+
+
+├── config.py             # Configuration variables
+
+├── train_wandb           # Wandb training
+
