@@ -168,3 +168,7 @@ project/
 
 ├── train_wandb           # Wandb training
 
+
+Wandb Link
+
+https://api.wandb.ai/links/ma24m004-iit-madras/4mrkogsr
